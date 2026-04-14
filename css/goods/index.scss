@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "../setting" as set;
+
+@use "../layout";
+@use "../components";
+
+main {
+    margin-top: 50px;
+    section.goods {
+        .sub {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        }
+        .goods_title {
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 30px;
+            width: 80%;
+            border-top: 1.5px solid #fff;
+            margin: 3rem auto;
+            @include set.tab {
+                width: 90%;
+            }
+            &.second {
+                border-top: none;
+                }
+        }
+        .goods_list {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1000px;
+                justify-content: center;
+                margin: 0 auto;
+                gap: 2rem 5%; 
+                li {
+                    img {
+                        display: block;
+                        margin-top: 1rem;
+                        width: 250px;
+                        height: 250px;
+                        object-fit: cover;
+                        cursor: pointer;
+                        transition: transform 0.25s ease, opacity 0.25s ease;
+                        &:hover {
+                            transform: scale(1.02);
+                            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+                        }
+                    }
+                    .item {
+                    margin-top: 10px;
+                    }
+                    .price {
+                        margin-top: 10px;
+                        span.tax {
+                            font-size: 0.8rem;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

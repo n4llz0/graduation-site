@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "../setting" as set;
+
+@use "../layout";
+@use "../components";
+
+main {
+    margin-top: 50px;
+    section.news {
+        .sub {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        }
+        ul{
+            width: 80%;
+            border-top: 1.5px solid #fff;
+            margin: 3rem auto;
+            @include set.tab {
+                width: 90%;
+            }
+            li {
+                width: 80%;
+                margin: auto;
+                border-bottom: 1px solid #a7a7a7;
+                &:hover{
+                    background: rgba(255,255,255,0.08);
+                    transition: all 0.25s ease;
+                }
+                @include set.tab {
+                    width: 90%;
+                }
+                a {
+                    width: 100%;
+                    display: flex;
+                    padding: 40px 0;
+                    @include set.sp {
+                            flex-direction: column;  
+                            align-items: flex-start;
+                            gap: 0.5rem;
+                    }
+                    .date{
+                        margin-right: 110px;
+                        line-height: 1.5;
+                        @include set.sp {
+                            padding-right: 0;
+                        }
+                    }
+                    .title {
+                        line-height: 1.5;
+                    }
+                }
+            }   
+        } 
+    }
+    article.news_detail {
+        width: 80%;
+        border-top: 1.5px solid #fff;
+        margin: 3rem auto;
+        @include set.tab {
+            width: 90%;
+        }
+        .newspage {
+            width: 80%;
+            margin: 3rem auto;
+            @include set.tab {
+                width: 90%;
+            }
+            .date_ {
+                font-size: 16px;
+                display: inline-block;
+                border-bottom: solid 2px #01ff05;
+            }
+            .title_ {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-top: 0.5rem;
+            }
+            a {
+                text-decoration: underline;
+                color: set.$accent;
+            }
+        }
+    }
+}

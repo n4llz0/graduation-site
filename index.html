@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OGP -->
+    <meta property="og:title" content="TOPページ">
+    <meta property="og:description" content="UNDERPULSEのTOPページ">
+    <meta property="og:url" content="http://seki-kokona.com/underpulse-fes/">
+    <meta property="og:image" content="http://seki-kokona.com/underpulse-fes/images/ogp.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UNDERPULSE">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>UNDERPULSE</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="UNDERPULSE" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/><!--必ず一番上-->
+    <link rel="stylesheet" href="https://use.typekit.net/rxm0emm.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script><!--必ず一番上-->
+    <script src="js/menu.js"></script><!--ハンバーガー-->
+</head>
+<body>
+    <!-- ロード画面 -->
+    <div id="loading-screen">
+        <div class="wave">
+            <div class="bar-item"></div>
+            <div class="bar-item"></div>
+            <div class="bar-item"></div>
+            <div class="bar-item"></div>
+            <div class="bar-item"></div>
+        </div>
+    </div>
+
+    <button class="page-top">
+        <span>TOP</span>
+    </button>
+
+    <header class="header-top">
+        <div class="header-decoration"></div>
+        <!-- PC用ナビ -->
+        <nav id="nav-top" class="nav-top">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="news/index.html">News</a></li>
+                <li><a href="#artist">Artists</a></li>
+                <li><a href="goods/index.html">Goods</a></li>
+                <li><a href="ticket/index.html">Tickets</a></li>
+            </ul>
+        </nav>
+        <!-- ハンバーガー -->
+        <button class="hamburger_menu" aria-label="メニュー" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+        <!-- オーバーレイ用ナビ -->
+    <nav class="nav-overlay" aria-hidden="true">
+        <div class="nav-overlay__content">
+            <ul class="nav-overlay__list">
+            <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link">TOP</a></li>
+            <li class="nav-overlay__item"><a href="#about" class="nav-overlay__link">About</a></li>
+            <li class="nav-overlay__item"><a href="news/index.html" class="nav-overlay__link">News</a></li>
+            <li class="nav-overlay__item"><a href="#artist" class="nav-overlay__link">Artists</a></li>
+            <li class="nav-overlay__item"><a href="goods/index.html" class="nav-overlay__link">Goods</a></li>
+            <li class="nav-overlay__item"><a href="ticket/index.html" class="nav-overlay__link">Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main_visual">
+            <div class="main-title">
+                <div class="sub-title">MUSIC FESTIVAL</div>
+                <h1>
+                    <img src="images/logo_symbol.png" alt="UNDERPULSE">
+                </h1>
+                <div class="countdown-timer">
+                    <span class="days">DAYS</span>
+                    <span class="time">99:99:99</span>
+                </div>
+                <div class="scroll">scroll</div>
+            </div>
+            <div class="date-info">
+                <span class="year">2026</span>
+                <span class="week">Wed</span>
+                <span class="date">02.11</span>
+            </div>
+            <div class="circuit-bg">
+                <img src="images/parts/parts2.png" class="circuit part-1 blink" alt="背景パーツ">
+                <img src="images/parts/parts3.png" class="circuit part-2 blink" alt="背景パーツ">
+                <img src="images/parts/parts4.png" class="circuit part-3 blink" alt="背景パーツ">
+            </div>
+        </section>
+
+        <section class="news-ticker">
+            <div class="ticker-wrap">
+                <ul>
+                    <li>
+                        <a href="news/20260210.html">
+                            <div class="date">2026.02.10</div>
+                            <div class="title">落とし物・忘れ物について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20260209.html">
+                            <div class="date">2026.02.09</div>
+                            <div class="title">当日券について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20260207.html">
+                            <div class="date">2026.02.07</div>
+                            <div class="title">会場物販について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20251209.html">
+                            <div class="date">2026.02.10</div>
+                            <div class="title">チケット先行受付を開始しました！</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20251125.html">
+                            <div class="date">2026.02.09</div>
+                            <div class="title">オフィシャル・アーティストグッズ情報解禁！</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="news/20260210.html">
+                            <div class="date">2026.02.10</div>
+                            <div class="title">落とし物・忘れ物について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20260209.html">
+                            <div class="date">2026.02.09</div>
+                            <div class="title">当日券について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20260207.html">
+                            <div class="date">2026.02.07</div>
+                            <div class="title">会場物販について</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20251209.html">
+                            <div class="date">2026.02.10</div>
+                            <div class="title">チケット先行受付を開始しました！</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/20251125.html">
+                            <div class="date">2026.02.09</div>
+                            <div class="title">オフィシャル・アーティストグッズ情報解禁！</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="concept">
+            <div class="inner">
+                <div class="concept-list">
+                    <h2 id="about" class="h2-scroll">About</h2>
+                    <div class="about-heading">
+                        <h4 class="h2-scroll">UNDERPULSEとは</h4>
+                        <p>UNDERPULSEは、インディーズアーティストに光を当てる発掘型音楽フェス。<br>
+                        有名かどうかじゃなく、ただ心に響くかどうかで音を選びたい、そんなあなたに新しい音との出会いを届けます。
+                        </p>
+                    </div>
+                    <div class="about-feature">
+                        <ul>
+                            <li class="fadein fadein-bottom">
+                                <div class="feature-title">発掘</div>
+                                <p>SNSでバズってるかどうかよりも、「自分の心に響くか」で音楽を選ぶ。<br>
+                                    ここでしか出会えない、新しい音に出会おう。</p>
+                            </li>
+                            <li class="fadein fadein-bottom">
+                                <div class="feature-title">共鳴</div>
+                                <p>ステージの鼓動と、フロアの鼓動が重なる瞬間。<br>
+                                    UNDERPULSEは、アーティストと観客が共に震える“共鳴”の場。</p>
+                            </li>
+                            <li class="fadein fadein-bottom">
+                                <div class="feature-title">没入</div>
+                                <p>ステージの鼓動と、フロアの鼓動が重なる瞬間。<br>
+                                    UNDERPULSEは、アーティストと観客が共に震える“共鳴”の場。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- artists -->
+        <section class="artists">
+            <div class="inner">
+                <h2 id="artist" class="h2-scroll">Artists</h2>
+                <h4 class="h2-scroll">出演アーティスト</h4>
+                <div class="artist-list">
+                    <ul>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist1">
+                            <img src="images/logo/cheeksick.png" alt="ロゴ画像：cheeksick">
+                            <div class="artist-name">cheeksick</div>
+                        </li>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist2">
+                            <img src="images/logo/TWiiNKL²★POP.png" alt="ロゴ画像：TWiiNKL²★POP">
+                            <div class="artist-name">TWiiNKL²★POP</div>
+                        </li>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist3">
+                            <img src="images/logo/CRAZY9.png" alt="ロゴ画像：CRAZY9">
+                            <div class="artist-name">CRAZY9</div>
+                        </li>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist4">
+                            <img src="images/logo/AVARiCE†STAiN.png" alt="ロゴ画像：AVARiCE†STAiN">
+                            <div class="artist-name">AVARiCE†STAiN</div>
+                        </li>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist5">
+                            <img src="images/logo/CYZR.png" alt="ロゴ画像：CYZR">
+                            <div class="artist-name">CYZR</div>
+                        </li>
+                        <li class="artist-card fadein fadein-bottom" data-modal="artist6">
+                            <img src="images/logo/anoko.png" alt="ロゴ画像：あのこはちょこぱふ">
+                            <div class="artist-name">あのこはちょこぱふ</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- モーダル本体 -->
+                <!-- アーティスト1 -->
+                <div class="modal-wrapper" id="artist1">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/cheeksick.png" alt="ロゴ画像：cheeksick">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            cheeksick
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        女の子の孤独や痛みを、ポップな毒気で包み込む2人組アーティスト。甘い夢と現実の生きづらさを行き来するような、中毒性のあるガーリーな世界を展開。言葉にならない感情を、彼女たちなりの「可愛い」に変換して発信中。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- アーティスト1 -->
+                <!-- アーティスト2 -->
+                <div class="modal-wrapper" id="artist2">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/TWiiNKL²★POP.png" alt="ロゴ画像：TWiiNKL²★POP">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            TWiiNKL²★POP
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        ピカピカの電子音に乗せて、銀河中にときめきを届ける2人組電脳アイドル。デジタルな世界から飛び出したような、キラキラでポップなパフォーマンスが特徴。見た瞬間に心拍数が跳ね上がる、新時代の輝きを放つ。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- アーティスト2 -->
+                <!-- アーティスト3 -->
+                <div class="modal-wrapper" id="artist3">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/CRAZY9.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            CRAZY9
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        エッジの効いたヒップホップユニット。既存のルールに縛られない、自由でタフな表現活動を展開。一度聴けば耳から離れない、圧倒的な衝動とスタイルでシーンを席巻するアーティスト。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- アーティスト3 -->
+                <!-- アーティスト4 -->
+                <div class="modal-wrapper" id="artist4">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/AVARiCE†STAiN.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            AVARiCE†STAiN
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        クラシカルなゴシック様式を現代的に解釈した、ヴィジュアルロックユニット。鏡合わせのように似通う二人のシルエットが、耽美で重厚な世界観を作り上げる。静謐さと激しさが共存するサウンドで、独自の美学を提示する。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- アーティスト4 -->
+                <!-- アーティスト5 -->
+                <div class="modal-wrapper" id="artist5">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/CYZR.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            CYZR
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        無機質なエレクトロサウンドを追求するソロプロジェクト。唯一無二の存在感を放つ、洗練されたソロパフォーマンスが持ち味。テクノロジーと音楽が高度に融合した世界観を提示する。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- アーティスト5 -->
+                <!-- アーティスト6 -->
+                <div class="modal-wrapper" id="artist6">
+                    <div class="modal-layer"></div><!-- 背景暗くなるやつ -->
+                    <div class="modal-container">
+                        <div class="modal-inner">
+                            <!-- モーダルを閉じるボタン -->
+                            <div class="modal-close"></div>
+                            <!-- モーダル内コンテンツ -->
+                            <div class="modal-content">
+                                <!-- 上部 -->
+                                <div class="modal-top">
+                                    <!-- ひだり -->
+                                    <div class="modal-left">
+                                        <div class="modal-image">
+                                            <img src="images/logo/anoko.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- みぎ -->
+                                    <div class="modal-right">
+                                        <div class="modal-title">
+                                            あのこはちょこぱふ
+                                        </div>
+                                        <div class="modal-sns">
+                                            <a href="#" target="_blank"><img src="images/X.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/Instagram.png" alt=""></a>
+                                            <a href="#" target="_blank"><img src="images/link.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom">
+                                    <p class="modal-text">
+                                        甘いお菓子のように、一口でみんなを幸せにする3人組アイドルユニット。「等身大の可愛さ」を武器に、SNS世代の心を掴むキャッチーな表現が特徴。見ているだけで心が満たされるような、幸福感たっぷりのステージを展開する。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- アーティスト6 -->
+            <!-- tab -->
+            <div class="container">
+                <div class="tab-container">
+                    <ul>
+                        <li class="selected" data-id="tab-1">timetable</li>
+                        <li data-id="tab-2">floormap</li>
+                    </ul>
+                    <div class="tab-content selected" id="tab-1">
+                        <!-- タイムテーブル -->
+                        <div class="tab-contents-area">
+                            <h4>OPEN 13:00</h4>
+                            <div class="timeline-area">
+                                <dl>
+                                    <div class="left">
+                                        <dt class="dot01">14:00~</dt>
+                                        <dd>cheeksick</dd>
+                                    </div>
+                                    <div class="right">
+                                        <dt class="dot02">14:30~</dt>
+                                        <dd>TWiiNKL²★POP</dd>
+                                    </div>
+                                    <div class="left">
+                                        <dt class="dot03">15:00~</dt>
+                                        <dd>CRAZY9</dd>
+                                    </div>
+                                    <div class="right">
+                                        <dt  class="dot04">15:30~</dt>
+                                        <dd>AVARiCE†STAiN</dd>
+                                    </div>
+                                    <div class="left">
+                                        <dt class="dot05">16:00~</dt>
+                                        <dd>CYZR</dd>
+                                    </div>
+                                    <div class="right">
+                                        <dt  class="dot06">16:30~</dt>
+                                        <dd>あのこはちょこぱふ</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <h4>CLOSE 18:00</h4>
+                            <p>※出演順・時間は変更になる可能性があります。</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab-2">
+                        <!-- フロアマップ -->
+                        <img src="images/map.webp" alt="floormap sample" class="floormap-img">
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- News -->
+        <section class="news-pu">
+            <div class="inner">
+                <h2 class="h2-scroll">News</h2>
+                <div class="newsbox">
+                    <h4 class="h2-scroll">最新情報</h4>
+                    <ul>
+                        <li>
+                            <a href="news/20260210.html">
+                                <div class="date">2026.02.10</div>
+                                <div class="title">落とし物・忘れ物について</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news/20260209.html">
+                                <div class="date">2026.02.09</div>
+                                <div class="title">当日券について</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news/20260207.html">
+                                <div class="date">2026.02.07</div>
+                                <div class="title">会場物販について</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="main_btn">
+                    <a href="news/index.html">View more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- チケット -->
+        <section class="tickets">
+            <div class="inner">
+                <h2 class="h2-scroll">tickets</h2>
+                <div class="ticket-info">
+                    <h4 class="h2-scroll">チケット情報</h4>
+                    <div class="ticket-tyeps">
+                        <div class="tyeps">前売り券　-ADVANCE-</div>
+                        <div class="price">価格：<span>¥3,500</span>（tax in）</div>
+                        <div class="point">※一次抽選受付 → 一般販売（先着）の順で販売します。</div>
+                    </div>
+                    <div class="ticket-tyeps">
+                        <div class="tyeps">当日券　-DOOR-</div>
+                        <div class="price">価格：<span>¥4,000</span>（tax in）</div>
+                        <div class="point">※前売り券が完売した場合、当日券の販売はありません。</div>
+                    </div>
+                    <p>
+                        ※入場時に別途1ドリンク代（¥600）が必要です。<br>
+                        ※小学生以下無料（要保護者同伴）
+                    </p>
+                </div>
+                <div class="ticket-schedule">
+                    <h4 class="h2-scroll">販売スケジュール</h4>
+                    <div class="schedule-item">
+                        <div class="schedule-title">● 一次抽選受付</div>
+                        <div class="schedule-date">
+                            受付期間：2026年1月10日〜1月20日<br>
+                            当落発表：2026年1月23日
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-title">● 一般販売</div>
+                        <div class="schedule-date">販売期間：2026年1月25日〜2月10日</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-title">● 当日券</div>
+                        <div class="schedule-date">販売日：2026年2月11日（会場受付）</div>
+                        <p>※前売り完売時は販売なし</p>
+                    </div>
+                </div>
+                <div class="precaution">
+                    <h4 class="h2-scroll">公演に関する注意事項</h4>
+                    <ul class="notes-list">
+                        <li>開催公演に関しては出演者変更などの理由の如何を問わず、チケット購入後のキャンセル・変更・払い戻しは一切できません。あらかじめご了承ください。</li>
+                        <li>公演中に撮影された映像や写真が、各種メディア・各種SNS・動画放送/配信・商品等に使用される可能性があります。あらかじめご了承ください。</li>
+                        <li>開場・開演時間は変更になる可能性がございます。あらかじめご了承ください。</li>
+                        <li>チケットの転売および譲渡は禁止しております。</li>
+                        <li>会場内では係員の指示に必ず従っていただくようお願いいたします。</li>
+                        <li>会場内外で発生した事故・トラブル・紛失物等について、主催者は責任を負いかねます。</li>
+                        <li>危険行為（モッシュ・ダイブなど）は安全上の理由により禁止しております。</li>
+                        <li>全てのお客様が安全に楽しんでいただけますよう、皆様のご理解とご協力をお願い致します。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ノベルティー -->
+        <section class="special">
+            <div class="inner">
+                <h2 class="h2-scroll">Special</h2>
+                <h4 class="h2-scroll">全来場者ノベルティ</h4>
+                <img class="fadeIn" src="images/novel.webp" alt="">
+                <p class="explanation">
+                    ご来場いただいたお客様に、<br>
+                    UNDERPULSEオリジナル「チケット型ステッカー」 を入場時に配布します。
+                </p>
+                <p class="precaution">
+                    ※来場者ノベルティは、当日ご来場されるご本人様のみお渡しとなります。また、代理でのお受け取りはできかねますのであらかじめご了承ください。<br>
+                    ※ステッカーの配布は入場時のみとなります。後日の配布や再配布はできません。
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copy">&copy; 2026 UNDERPULSE. All rights reserved.</div>
+    </footer>
+</body>
+</html>

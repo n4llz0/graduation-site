@@ -1,0 +1,7 @@
+// セクションの中身を整える内枠（自由に使える）
+.inner {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 40px; // 要素間の余白
+}

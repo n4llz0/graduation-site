@@ -1,0 +1,194 @@
+h2 {
+  font-size: 2rem;
+  font-family: "beachwood-variable", sans-serif;
+  font-variation-settings: "wdth" 150, "wght" 500, "slnt" 10;
+  text-align: center;
+  margin-top: 100px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+h2.is-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+}
+h4::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #01ff05;
+  transform: translateX(-50%);
+  transition: width 0.8s ease;
+}
+h4.is-show::after {
+  width: 60px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main_btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 4rem auto;
+  color: #fff;
+  font-size: 12px;
+  width: 170px;
+  height: 45px;
+  transition: 0.3s;
+  font-family: "beachwood-variable", sans-serif;
+  font-variation-settings: "wdth" 150, "wght" 400, "slnt" 0;
+  background-image: linear-gradient(90deg, rgb(30, 30, 30) 40%, rgb(54, 54, 54));
+}
+.main_btn a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 15px 15px;
+  border-color: transparent transparent #01ff05 transparent;
+}
+.main_btn :hover {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: #111010;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+footer .copy {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+main {
+  margin-top: 50px;
+}
+main section.ticket .sub {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+main section.ticket .ticket-wrapper {
+  width: 80%;
+  margin: 3rem auto;
+  border-top: 1.5px solid #fff;
+  padding-top: 2rem;
+}
+main section.ticket .ticket-wrapper table {
+  width: 100%;
+  max-width: 800px;
+  color: #fff;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+main section.ticket .ticket-wrapper table thead {
+  background: rgba(1, 255, 5, 0.2);
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table thead {
+    display: none;
+  }
+}
+main section.ticket .ticket-wrapper table tbody {
+  background: rgba(80, 80, 80, 0.4);
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table tbody {
+    background: none;
+  }
+}
+main section.ticket .ticket-wrapper table th, main section.ticket .ticket-wrapper table td {
+  border: 1px solid #fff;
+  padding: 2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table th, main section.ticket .ticket-wrapper table td {
+    display: block;
+    border: none;
+    padding: 0.5rem 0;
+  }
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1.5rem 0;
+    border: 1px solid #fff;
+    background: rgba(80, 80, 80, 0.3);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+}
+main section.ticket .ticket-wrapper table td {
+  text-align: center;
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table td:first-child {
+    background: rgba(1, 255, 5, 0.25);
+    margin: -1rem -1rem rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table td:nth-child(2) {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #01ff05;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+}
+@media only screen and (max-width: 834px) {
+  main section.ticket .ticket-wrapper table td:nth-child(3) {
+    text-align: center;
+  }
+}
+main section.ticket .precaution {
+  width: 70%;
+  margin: 0 auto;
+}
+main section.ticket .precaution .notes-list {
+  margin-top: 2rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #fff;
+  line-height: 1.8;
+}
+main section.ticket .precaution .notes-list li {
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=index.css.map */

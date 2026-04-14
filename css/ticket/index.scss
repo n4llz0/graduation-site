@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "../setting" as set;
+
+@use "../layout";
+@use "../components";
+
+main {
+    margin-top: 50px;
+    section.ticket {
+        .sub {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        }
+        .ticket-wrapper {
+            width: 80%;
+            margin: 3rem auto;
+            border-top: 1.5px solid #fff;
+            padding-top: 2rem;
+            table {
+                width: 100%;
+                max-width: 800px;
+                color: #fff;
+                margin: 0 auto;
+                border-collapse: collapse;
+                thead {
+                    background: rgba(set.$accent, $alpha: 0.2);
+                    @include set.tab {
+                        display: none;
+                    }
+                }
+                tbody {
+                    background: rgba($color: #505050, $alpha: 0.4);
+                    @include set.tab {
+                        background: none;
+                    }
+                }
+                th, td {
+                    border: 1px solid #fff;
+                    padding: 2rem;
+                    text-align: center;
+                    @include set.tab {
+                        display: block;
+                        border: none;
+                        padding: 0.5rem 0;
+                    }
+                }
+                tr {
+                    @include set.tab {
+                        display: block;
+                        margin-bottom: 1.5rem;
+                        padding: 1.5rem 1.5rem 0;
+                        border: 1px solid #fff;;
+                        background: rgba(#505050, 0.3);
+                        backdrop-filter: blur(4px);
+                    }
+                }
+                td {
+                    text-align: center;
+                    padding: 2rem 0;
+                    &:first-child {
+                        @include set.tab {
+                            background: rgba(set.$accent, 0.25);
+                            margin: -1rem -1rem rem;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    &:nth-child(2) {
+                        @include set.tab {
+                            text-align: center;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            color: set.$accent;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                        }
+                    }
+                    &:nth-child(3) {
+                        @include set.tab {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .precaution {
+            width: 70%;
+            margin: 0 auto;
+            .notes-list {
+                margin-top: 2rem;
+                list-style-type: disc;
+                padding-left: 1.5rem;
+                color: #fff;
+                line-height: 1.8;
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}

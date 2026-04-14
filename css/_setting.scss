@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@use "sass:math";
+
+// 変数の設定
+
+//ブレイクポイント
+$bp_pc: 1280px;
+$bp_tab: 834px;
+$bp_sp: 520px;
+
+//メディアクエリ
+@mixin pc {
+	@media only screen and (max-width: ($bp_pc)){
+		@content;
+	}
+}
+@mixin tab {
+	@media only screen and (max-width: ($bp_tab)){
+		@content;
+	}
+}
+@mixin sp {
+	@media only screen and (max-width: ($bp_sp)){
+		@content;
+	}
+}
+
+//color
+
+$accent:#01ff05;
+$maincolor:#cdccf7;
+
+// text
+
+// TOPセクションタイトル
+h2 {
+	font-size: 2rem;
+	font-family: "beachwood-variable", sans-serif;
+	font-variation-settings: 'wdth' 150, 'wght' 500, 'slnt' 10;
+	text-align: center;
+	margin-top: 100px;
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	&.is-show {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+// 下層ページタイトル
+h3 {
+	font-size: 2rem;
+	font-family: "helvetica-lt-pro", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 2rem;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: -10px;
+		width: 0;
+		height: 2px;
+		background-color: #01ff05;
+		transform: translateX(-50%);
+		transition: width 0.8s ease;
+	}
+	&.is-show::after {
+		width: 60px;
+	}
+}
